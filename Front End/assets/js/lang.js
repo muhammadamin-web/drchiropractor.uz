@@ -44,7 +44,9 @@ const langData = {
         "card1_text": "Leave a request, we will call you back in 5 minutes and help you choose a convenient time for an appointment",
         "card2_text": "Tashkent,\
         Yakkasaray district, st. Mukimiy, house-44",
-        "card3_text": "Mon-Sat — 9:00-20:00\
+        "card3_text1": "Mon-Sat — 9:00-20:00\n\
+        Sun — 09:00 - 13:00",
+        "card3_text2": "Mon-Sat — 9:00-20:00\n\
         Sun — 09:00 - 13:00",
         "services_text": "Here you will find all the services you need to keep your family healthy",
         "": "",
@@ -73,11 +75,11 @@ const langData = {
         "service_card3_text": "Therapeutic massage is one of the most effective health procedures, which consists in the manual impact on various parts of the body. Massage has been used for thousands of years for the successful treatment of many diseases and recovery from injuries. Such therapy has practically no contraindications and side effects, is painless and does not require the use of chemicals. Modern medicine offers various methods of manual and hardware therapy, focused on the treatment or prevention of a wide variety of diseases for people of any age.",
 
 
-        "service_card4_title": "Vacuum therapy",
+        "service_card4_title": "TENS therapy",
         "service_card4_text": "Helps to improve local blood flow, thereby increasing local immunity.",
 
 
-        "service_card5_title": "TENS therapy",
+        "service_card5_title": "Vacuum therapy",
         "service_card5_text": "Pulsed Current Therapy (TENS) is transcutaneous electrical nerve stimulation. This is a treatment with short pulses of low frequency electric current. This procedure blocks the propagation of the nerve pain signal from the area of pain to the brain. It reduces pain, suppresses inflammation, improves blood circulation and reduces muscle tension.",
 
 
@@ -93,7 +95,7 @@ const langData = {
         "consultation_title": "Free consultation",
         "consultation_text": "Sign up for a consultation and get a professional examination from the main specialist of the center",
         "consultation_button": "Sign up",
-        "about_title": "About Us",
+        "about_title": "About Us", 
         "about_text1": "The Dr. Chiropractor Center is a private center for the whole family. We have been working since 2020, during this time we have been able to perform 10,000 procedures and help 2,000 people with their spinal problems",
         "about_text2": "Our center brought together specialists who combined treatment methods from East and West",
         "about_card1_title": "Comfortable visit without a queue",
@@ -114,6 +116,55 @@ const langData = {
         "": "",
         "": "",
         "": "",
+
+        "expert_card1_title": "Hotam Rakhimov",
+        "expert_card1_text": "Experience: 6 years \n\
+        Trained: Uzbekistan, Russia, China, Indonesia.\
+        Specialty: Physiotherapist, expert in biomechanics. Sports rehabilitator\
+        \
+        Procedures:\
+        -Physiotherapy,\
+        -Rehabilitation after injuries\
+        -Manual therapy,\
+        -Shock therapy (correction and editing of the spinal column)\
+        - Hijama,\
+        -Acupuncture (acupuncture)\
+        - Articular study and restoration of muscle tissues\
+        - Recovery biomechanics.",
+        "expert_card2_title": "Burkhanov Avaz Alohonovich",
+        "expert_card2_text": "Experience: over\n\n 10 years. Trained: Uzbekistan, Russia, Kingdom of Thailand, USA\
+        Specialty: Rehabilitation doctor.\
+        \
+        Procedures: - Identification of problems through kinesiology tests of muscle ligaments, MFR and musculoskeletal disorders (MDA)\
+        -Manual therapy\
+        - Impact Therapy\
+        -Education",
+        "expert_card3_title": "Elena Goncharenko",
+        "expert_card3_text": "Experience: 5 years \Trained in: Tashkent, South Korea\
+        Procedures:\
+        -Manual therapy\
+        -Massotherapy",
+        "expert_card4_title": "Lola Sattarova",
+        "expert_card4_text": "Experience: 8 years\
+        Trained: Tashkent,\
+        Procedures:\
+        -Manual therapy\
+        -Massotherapy\
+        - Honey massage",
+        "expert_card5_title": "Khudoyor Pardaev",
+        "expert_card5_text": "Experience: 14 years\
+        Trained: Tashkent,\
+        Procedures:\
+        -Massotherapy\
+        -Honey massage\
+        -Baby massage\
+        - Hijama",
+        "expert_card6_title": "Khasan Gaybullaev",
+        "expert_card6_text": "Experience: 8 years\
+        Trained: Tashkent,\
+        Procedures:\
+        -Massotherapy\
+        -Baby massage",
         //page card1 start
 
         "servise_card1_page": "Manual therapy",
@@ -333,7 +384,8 @@ const langData = {
       "card1_text": "Оставьте заявку, мы перезвоним через 5 минут и поможем выбрать удобное время для записи",
       "card2_text": "г. Ташкент,\
       Яккасарайский район, ул. Мукимий, дом-44",
-      "card3_text": "Пн-Cб— 9:00-20:00\
+      "card3_text1": "Пн-Cб— 9:00-20:00",
+      "card3_text2": "Пн-Cб— 9:00-20:00\
       Вс — 09:00 - 13:00",
       "services_text": "У нас вы найдете все услуги, необходимые для поддержания здоровья вашей семьи",
       "": "",
@@ -363,7 +415,7 @@ const langData = {
         "service_card3_text": "Лечебный массаж – это одна из самых эффективных оздоровительных процедур, состоящая в мануальном воздействии на различные участки тела. Массаж применялся еще несколько тысяч лет назад для успешного лечения многих заболеваний и восстановления после травм. Такая терапия практически не имеет противопоказаний и побочных эффектов, безболезненна и не требует приема химических препаратов. Современная медицина предлагает различные методики мануальной и аппаратной терапии, ориентированной на лечение или профилактику самых разных заболеваний людей любого возраста.",
 
 
-        "service_card4_title": "Вакуумная терапия",
+        "service_card4_title": "ТЭНС терапия",
         "service_card4_text": "Способствует улучшению местного кровотока, тем самым повышает локальных иммунитет.",
 
 
