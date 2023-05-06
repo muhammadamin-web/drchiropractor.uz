@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Slider</title>
+    <style>
+.card-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex: 0 0 25%;
+    scroll-snap-align: start;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+@media (max-width:640px) {
+    .card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+}
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 5px;
+}
+
+.next-btn {
+    right: 5px;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="card-slider">
+            <div class="card-wrapper">
+                <!-- Bitta kardni shu yerda qo'shing -->
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="profile1.jpg" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Name 1</h5>
+                        <p class="card-text">Some description about the person.</p>
+                    </div>
+                </div>
+                <!-- Boshqa kardlarni shu yerda qo'shing -->
+            </div>
+            <button class="prev-btn">Prev</button>
+            <button class="next-btn">Next</button>
+        </div>
+
+
+    </div>
+    <script>
+     const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const cardWrapper = document.querySelector('.card-wrapper');
+
+prevBtn.addEventListener('click', () => {
+    cardWrapper.scrollBy({ left: -cardWrapper.clientWidth * 0.25, behavior: 'smooth' });
+});
+
+nextBtn.addEventListener('click', () => {
+    cardWrapper.scrollBy({ left: cardWrapper.clientWidth * 0.25, behavior: 'smooth' });
+});
+function autoSlide() {
+    const scrollLeftMax = cardWrapper.scrollWidth - cardWrapper.clientWidth;
+    if (cardWrapper.scrollLeft >= scrollLeftMax) {
+        cardWrapper.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+        cardWrapper.scrollBy({ left: cardWrapper.clientWidth * 0.25, behavior: 'smooth' });
+    }
+}
+
+// Har 3 sekunddan keyin kardlarni o'tkazish
+const autoSlideInterval = setInterval(autoSlide, 3000);
+
+// Har 3 sekunddan keyin kardlarni o'tkazish
+
+
+// Tugmalar bosilganda avtomatik o'tkazishni to'xtatish
+// prevBtn.addEventListener('click', () => {
+//     clearInterval(autoSlideInterval);
+// });
+
+// nextBtn.addEventListener('click', () => {
+//     clearInterval(autoSlideInterval);
+// });
+
+    </script>
+  </body>
+</html>
